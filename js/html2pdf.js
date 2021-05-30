@@ -1,7 +1,5 @@
 function download() {
     const element = document.getElementById("teste");
 
-    html2pdf()
-    .from(element)
-    .save();
+    var worker = html2pdf().from(element).save();
 }
